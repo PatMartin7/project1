@@ -230,7 +230,11 @@ merged2018df.columns = ['Country Name', 'Country Code', 'Indicator Name', 'Indic
 mergedfinalfiltered = mergedfinaldf.drop(['2000', '2001', '2002', '2003', '2004',
        '2005', '2006', '2007', '2008', '2009', '2010', '2011', '2012', '2013',
        '2014', '2019'],axis=1)
+# suicide filtered file
+suicide_filtered = suicide_df2.drop(['Total', 'Max', 'Min', 'Avg', '2000', '2001', '2002', '2003', '2004',
+       '2005', '2006', '2007', '2008', '2009', '2010', '2011', '2012', '2013',
+       '2014', '2019'],axis=1)
 
 
-dflist = ['mergedfinaldf','merged2015df','merged2016df','merged2017df','merged2018df','mergedfinalfiltered']
+dflist = ['mergedfinaldf','merged2015df','merged2016df','merged2017df','merged2018df','mergedfinalfiltered','suicide_filtered']
 
